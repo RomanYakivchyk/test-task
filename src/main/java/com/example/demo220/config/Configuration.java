@@ -34,9 +34,9 @@ public class Configuration {
     public Firestore firestore() throws IOException {
         return FirestoreOptions.getDefaultInstance().newBuilder()
 //                .setProjectId("project-yakivchyk-14228")
-                .setCredentials(GoogleCredentials.fromStream(
-                        new FileInputStream(
-                                new File("src/main/resources/project-yakivchyk-14228-5719abd18e0e.json"))))
+//                .setCredentials(GoogleCredentials.fromStream(
+//                        new FileInputStream(
+//                                new File("src/main/resources/project-yakivchyk-14228-5719abd18e0e.json"))))
                 .build()
                 .getService();
     }
